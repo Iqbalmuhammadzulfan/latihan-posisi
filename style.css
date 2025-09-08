@@ -14,52 +14,41 @@ body {
 
 /* Container */
 .container {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  padding-top: 60px; /* jarak agar konten tidak ketiban navbar */
+    border: 2px solid black;
+    width: 80%;
+    height: 2000px;
+    margin-inline: auto;
 }
 
-/* Box umum */
-.box {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.brand .logo {
+    width: 40px;   /* atur ukuran kecil */
+    height: auto;  /* biar proporsional */
+    display: block;
 }
+
 
 /* Navigasi */
-.box1 {
-  background: #2c3e50;
-  height: 60px;
-  position: fixed; 
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 1000;
-
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
+.navbar .box-navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.box1 nav ul {
-  list-style: none;
-  display: flex;
-  flex-direction: row;
-  gap: 30px;
+.navbar .box-navbar .menu-navbar ul{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
 }
 
-.box1 nav ul li a {
-  color: white;
-  text-decoration: none;
-  font-weight: 600;
-  transition: color 0.3s;
+.navbar .box-navbar .menu-navbar ul li{
+    list-style-type: none;
+    margin-inline: 10px;
 }
 
-.box1 nav ul li a:hover {
-  color: #1abc9c; /* efek hover hijau tosca */
+.navbar .box-navbar .menu-navbar ul li a{
+    text-decoration: none;
+    color: black;
 }
 
 /* Hero */
@@ -89,9 +78,11 @@ body {
   flex-direction: column;
   align-items: flex-start;
   padding: 40px;
-  max-width: 1000px;
+  max-width: 2000px;
   margin: 0 auto;
   border-radius: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
